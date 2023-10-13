@@ -14,6 +14,14 @@ pnpm dev
 bun dev
 ```
 
+## Getting Started - Cloudflare in local
+```bash
+# to generate output files
+npx @cloudflare/next-on-pages
+#deploy
+npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
